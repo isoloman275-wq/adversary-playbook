@@ -90,24 +90,25 @@ the law and your authorization scope.
 
 ## More packs
 
-The **full Adversary Playbook (14 skills)** adds the Active Directory
-trust-abuse ladder and the CI/CD attack chains:
+The **full Adversary Playbook (14 skills)** adds the capability areas these four
+free skills stop short of. It is available as a bundle or as individual skills
+on our [Agensi store](https://www.agensi.io):
 
-- `kerberos-trust-abuse` — inter-realm TGT forging with in-direction trust keys,
-  clock-skew compensation hook, SeBackupPrivilege backup-intent finish (+3 tool scripts)
-- `cross-forest-trust-abuse` — forest trust enumeration + SID-filtering bypass
-- `multi-domain-ad-attacks` — child/parent domain escalation paths
-- `gitea-ci-injection` — Gitea Actions: malicious preinstall via reverse-fork PRs,
-  runner self-registration auth bypass
-- `ci-runner-abuse` — turning CI runners into pivots
-- `ssrf-cloud-metadata` — SSRF → IMDS credential theft → RCE ladder
-- `stored-xss-admin-bot` — stored XSS → admin-bot session hijack → plugin RCE
-- `linux-privesc-quickwins` — the 15-minute privesc ladder
-- `vmware-mem-forensics` — credential extraction from .vmem/.vmdk dumps
-- `engagement-session-ops` — the meta-skill: running a full engagement session end-to-end
+- **Active Directory trust-abuse ladder** — inter-realm ticket forging against
+  trusting forests, clock-skew compensation, the privilege that finishes what
+  DACLs deny, and child/parent domain escalation paths
+- **CI/CD attack chains** — turning build runners into pivots, and code execution
+  through package-install hooks in reverse-fork pull requests
+- **Cloud credential theft** — service-side request forgery to instance-metadata
+  credentials, then to execution
+- **Web chains** — stored cross-site scripting through an admin bot to session
+  hijack and server-side plugin execution
+- **Host post-exploitation** — the 15-minute privilege-escalation ladder, and
+  credential extraction from virtual-machine memory images
+- **Engagement meta-skill** — running a whole engagement session end-to-end:
+  network setup, recon discipline, objective extraction, teardown
 
-Available as a bundle or individually on our [Agensi store](https://www.agensi.io),
-alongside our other packs:
+Our other packs, same storefront:
 
 - **Homelab AI Operator** — run a multi-node local AI lab on hardware you
   already own (10 skills)
